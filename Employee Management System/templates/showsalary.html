@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <form action="" method = "POST" novalidate>
+        <table>
+            <caption>{{caption}}</caption>
+            <th>ID</th>
+            <th>CTC</th>
+            <th>House Rent Allowance</th>
+            <th>Travel_Allowance</th>
+            <th>Taxable Income</th>
+            <th>Tax Rate</th>
+            <th>In Hand</th>
+            {% for pay in payment %}
+            <tr>
+                <td id="detail">{{ pay["ID"] }}</td>
+                <td id="detail">{{ pay["CTC"] }}</td>
+                <td id="detail">{{ pay["House_rent_allowance"] }}</td>
+                <td id="detail">{{ pay["Travel_allowance"] }}</td>
+                <td id="detail">{{ pay["Taxable_income"] }}</td>
+                <td id="detail">{{ pay["Tax_rate"] }}</td>
+                <td id="detail">{{ pay["In_hand"] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+
+{% endblock %}

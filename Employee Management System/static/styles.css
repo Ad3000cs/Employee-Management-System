@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Bookletter;
+    src: url('GoudyBookletter1911-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: Kamillo;
+    src: url('KamilloGrotesk-Regular.ttf')
+format('truetype');
+}
+
+html{
+    background-image: url(background.jpg);
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 1px solid black;
+    font-family: Kamillo;
+}
+
+th{
+    background-color: antiquewhite;
+    font-family: Bookletter;
+}
+
+#Logo{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+} 
+
+h1 {
+    text-align: center;
+    font-family: Bookletter;
+}
+
+#login , #reference, #display{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 5px; */
+    flex-direction: row;
+    justify-content: center;
+}
+
+#login > section, #reference > section,  #display > section{
+    text-align: center;
+    
+    border: 1px solid black;
+    background-color: antiquewhite;
+    margin: 30px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#login > section:hover, #display > section:hover{
+    transform: scale(1.3);
+    transition: 0.8s;
+}
+
+#maintable{
+    font-size: small;
+}
+
+#detail{
+    text-align: center;
+    padding: 10px;
+}
+
+#register_1, #update_1{
+    text-align: center;
+}
+
+#register_1 > section, #update_1 > section{
+    text-align: center;
+}
+
+#displayimage{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    height: 50px;
+    width: 65px;
+}
+
+caption{
+    font-size: large;
+}
+

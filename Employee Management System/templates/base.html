@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Web Development 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css') }}">
+    <img id = "Logo" src="{{ url_for('static', filename = 'logo.png') }}" alt = "Logo" />
+    <!-- <h1>Welcome to EMS Software</h1> -->
+</head>
+
+<body>
+    
+    
+        {% if g.admin %}
+            <p>Admin id: {{ g.admin }}</p>
+            <p> <a href="{{ url_for('logout') }}">logout</a> </p>
+        {% elif g.user %}
+            <p>User id: {{ g.user }}</p>
+            <p> <a href="{{ url_for('logout') }}">logout</a> </p>
+        
+        {% else %}
+            <article id = "login">
+                <section id = "employee">
+                    <p> <a href = "{{ url_for('emplog') }}">Login as Employee</a> </p>
+                </section>
+                <section id = "admin">
+                    <p> <a href = "{{ url_for('adminlog') }}">Login as Admin</a> </p>
+                </section>
+                <section id="references">
+                    <p> <a href="{{ url_for('citations') }}">Citations</a> </p>
+                </section>
+
+            </article>
+            
+        {% endif %}
+    
+
+    
+    {% block main_content %}
+    {% endblock %}
+</body>
+
+
+</html>

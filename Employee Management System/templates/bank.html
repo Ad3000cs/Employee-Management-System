@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <form id="register_1" action="" method="POST" novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.ID.label }}
+        <section>{{ form.ID() }}</section>
+
+        <br/>
+
+        {{ form.First_name.label }}
+        <section>{{ form.First_name() }}</section>
+
+        <br/>
+
+        {{ form.Last_name.label }}
+        <section>{{ form.Last_name() }}</section>
+
+        <br/>
+
+        {{ form.Bank.label }}
+        <section>{{ form.Bank() }}</section>
+
+        <br/>
+
+        {{ form.Branch.label }}
+        <section>{{ form.Branch() }}</section>
+
+        <br/>
+
+        {{ form.IBAN.label }}
+        <section>{{ form.IBAN() }}</section>
+
+        <br/>
+
+        {{ form.Account_Number.label }}
+        <section>{{ form.Account_Number() }}</section>
+
+        <br/>
+
+        {{ form.PSC.label }}
+        <section>{{ form.PSC() }}</section>
+
+        <br/>
+
+        {{ form.submit() }}
+
+    </form>
+
+{% endblock %}

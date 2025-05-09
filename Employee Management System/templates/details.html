@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <form id="register_1" action="" method="POST" novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.ID.label }}
+        <section>{{ form.ID() }}</section>
+
+        <br/>
+
+        {{ form.First_name.label }}
+        <section>{{ form.First_name() }}</section>
+
+        <br/>
+
+        {{ form.Last_name.label }}
+        <section>{{ form.Last_name() }}</section>
+
+        <br/>
+        
+        {{ form.E_mail.label }}
+        <section>{{ form.E_mail() }}</section>
+
+        <br/>
+
+        {{ form.Phone_Number.label }}
+        <section>{{ form.Phone_Number() }}</section>
+
+        <br/>
+
+        {{ form.Address.label }}
+        <section>{{ form.Address() }}</section>
+
+        <br/>
+
+        {{ form.County.label }}
+        <section>{{ form.County() }}</section>
+
+        <br/>
+
+        {{ form.Join_date.label }}
+        <section>{{ form.Join_date() }}</section>
+
+        <br/>
+
+        {{ form.Department.label }}
+        <section>{{ form.Department() }}</section>
+
+        <br/>
+
+        {{ form.Role.label }}
+        <section>{{ form.Role() }}</section>
+
+        <br/>
+
+        {{ form.Type.label }}
+        <section>{{ form.Type() }}</section>
+
+        <br/>
+
+        {{ form.level.label }}
+        <section>{{ form.level() }}</section>
+
+        <br/>
+
+        {{ form.Total_leaves.label }}
+        <section>{{ form.Total_leaves() }}</section>
+
+        <br/>
+
+        {{ form.Taken_leaves.label }}
+        <section>{{ form.Taken_leaves() }}</section>
+
+        <br/>
+
+        {{ form.Left_leaves.label }}
+        <section>{{ form.Left_leaves() }}</section>
+
+        <br/>
+
+        {{ form.Termination_date.label }}
+        <section>{{ form.Termination_date() }}</section>
+
+        <br/>
+
+        {{ form.submit() }}
+
+    </form>
+    
+    <p>{{ message }}</p>
+{% endblock %}

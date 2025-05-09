@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <form id="update_1" action="" method = "POST" novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.ID.label }}
+        <section>{{ form.ID() }}</section>
+
+        <br/>
+
+        {{ form.column.label }}
+        <section>{{ form.column() }}</section>
+
+        <br/>
+
+        {{ form.newdata.label }}
+        <section>{{ form.newdata() }}</section>
+
+        <br/>
+
+        {{ form.submit() }}
+
+    </form>
+    {{ message }}
+{% endblock %}

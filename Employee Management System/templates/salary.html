@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <form id="register_1" action="" method="POST" novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.ID.label }}
+        <section>{{ form.ID() }}</section>
+
+        <br/>
+
+        {{ form.CTC.label }}
+        <section>{{ form.CTC() }}</section>
+
+        <br/>
+
+        {{ form.House_rent_allowance.label }}
+        <section>{{ form.House_rent_allowance() }}</section>
+
+        <br/>
+
+        {{ form.Travel_allowance.label }}
+        <section>{{ form.Travel_allowance() }}</section>
+
+        <br/>
+
+        {{ form.Taxable_income.label }}
+        <section>{{ form.Taxable_income() }}</section>
+
+        <br/>
+
+        {{ form.Tax_rate.label }}
+        <section>{{ form.Tax_rate() }}</section>
+
+        <br/>
+
+        {{ form.In_hand.label }}
+        <section>{{ form.In_hand() }}</section>
+
+        <br/>
+
+        {{ form.submit() }}
+    </form>
+    {{message}}
+
+{% endblock %}

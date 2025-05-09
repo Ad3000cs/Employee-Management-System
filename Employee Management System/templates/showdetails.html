@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <form action="" method = "POST" novalidate>
+        <table id="maintable">
+            <caption>{{caption}}</caption>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>E-mail</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>County</th>
+            <th>Join Date</th>
+            <th>Department</th>
+            <th>Role</th>
+            <th>Type</th>
+            <th>Level</th>
+            <th>Total Leaves</th>
+            <th>Taken Leaves</th>
+            <th>Left Leaves</th>
+            <th>Termination Date</th>
+            {% for detail in details %}
+            <tr>
+                <td id="detail">{{ detail["ID"] }}</td>
+                <td id="detail">{{ detail["First_name"] }}</td>
+                <td id="detail">{{ detail["Last_name"] }}</td>
+                <td id="detail">{{ detail["E_mail"] }}</td>
+                <td id="detail">{{ detail["Phone_Number"] }}</td>
+                <td id="detail">{{ detail["Address"] }}</td>
+                <td id="detail">{{ detail["County"] }}</td>
+                <td id="detail">{{ detail["Join_date"] }}</td>
+                <td id="detail">{{ detail["Department"] }}</td>
+                <td id="detail">{{ detail["Role"] }}</td>
+                <td id="detail">{{ detail["Type"] }}</td>
+                <td id="detail">{{ detail["level"] }}</td>
+                <td id="detail">{{ detail["Total_leaves"] }}</td>
+                <td id="detail">{{ detail["Taken_leaves"] }}</td>
+                <td id="detail">{{ detail["left_leaves"] }}</td>
+                <td id="detail">{{ detail["Termination_date"] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+
+{% endblock %}

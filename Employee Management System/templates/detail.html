@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+<h1><i>Your Details</i></h1>
+
+<table>
+    <tr>
+        <td id="detail">ID</td>
+        <td id="detail">{{ detail["ID"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">First Name</td>
+        <td id="detail">{{ detail["First_name"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Last Name</td>
+        <td id="detail">{{ detail["Last_name"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">E-mail</td>
+        <td id="detail">{{ detail["E_mail"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Phone Number</td>
+        <td id="detail">{{ detail["Phone_Number"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Address</td>
+        <td id="detail">{{ detail["Address"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">County</td>
+        <td id="detail">{{ detail["County"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Join Date</td>
+        <td id="detail">{{ detail["Join_date"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Department</td>
+        <td id="detail">{{ detail["Department"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Role</td>
+        <td  id="detail">{{ detail["Role"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Type</td>
+        <td id="detail">{{ detail["Type"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Level</td>
+        <td id="detail">{{ detail["level"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Total Leaves</td>
+        <td id="detail">{{ detail["Total_leaves"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Taken Leaves</td>
+        <td id="detail">{{ detail["Taken_leaves"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Left Leaves</td>
+        <td id="detail">{{ detail["left_leaves"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Termination Date</td>
+        <td id="detail">{{ detail["Termination_date"] }}</td>
+    </tr>
+</table>
+
+
+{% endblock %}

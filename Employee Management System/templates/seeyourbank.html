@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<h1>Your Bank details</h1>
+
+
+<table>
+    <tr>
+        <td id="detail">ID</td>
+        <td id="detail">{{ bank["ID"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">First Name</td>
+        <td id="detail">{{ bank["First_name"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Last Name</td>
+        <td id="detail">{{ bank["Last_name"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Bank</td>
+        <td id="detail">{{ bank["Bank"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Branch</td>
+        <td id="detail">{{ bank["Branch"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">IBAN</td>
+        <td id="detail">{{ bank["IBAN"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Account Number</td>
+        <td id="detail">{{ bank["Account_Number"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">PSC</td>
+        <td id="detail">{{ bank["PSC"] }}</td>
+    </tr>
+</table>
+
+
+{% endblock %}

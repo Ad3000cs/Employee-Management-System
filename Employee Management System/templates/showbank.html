@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <form action="" method = "POST" novalidate>
+        <table>
+            <caption>{{caption}}</caption>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Bank</th>
+            <th>Branch</th>
+            <th>IBAN</th>
+            <th>Account Number</th>
+            <th>PSC</th>
+            {% for bank in banks %}
+            <tr>
+                <td id="detail">{{ bank["ID"] }}</td>
+                <td id="detail">{{ bank["First_name"] }}</td>
+                <td id="detail">{{ bank["Last_name"] }}</td>
+                <td id="detail">{{ bank["Bank"] }}</td>
+                <td id="detail">{{ bank["Branch"] }}</td>
+                <td id="detail">{{ bank["IBAN"] }}</td>
+                <td id="detail">{{ bank["Account_Number"] }}</td>
+                <td id="detail">{{ bank["PSC"] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+{% endblock %}

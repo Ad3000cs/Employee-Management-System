@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block main_content %}
+    <h1>Welcome Admin</h1>
+    <article id = "display">
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'plus.png') }}" alt = "Add" />
+                <a href = "{{url_for('register')}}">Register an Employee</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'eye.png') }}" alt = "See" />
+                <a href = "{{ url_for('all_details') }}">See details</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'eye.png') }}" alt = "See" />
+                <a href = "{{ url_for('pay') }}">See salary details</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'eye.png') }}" alt = "eye" />
+                <a href = "{{ url_for('showbank') }}">See bank details</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'up.png') }}" alt = "Update" />
+                <a href = "{{ url_for('updetails') }}">Update details</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'up.png') }}" alt = "Update" />
+                <a href = "{{ url_for('upsalary') }}">Update salary details</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'up.png') }}" alt = "Update" />
+                <a href = "{{ url_for('upbank') }}">Update bank details</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'down.png') }}" alt = "Delete" />
+                <a href="{{ url_for('deldetails') }}">Delete Details</a>
+            </p>
+        </section>
+        
+    </article>
+    
+{% endblock %}

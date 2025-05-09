@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+<h1>Your Salary details</h1>
+
+<table>
+    <tr>
+        <td id="detail">ID</td>
+        <td id="detail">{{ pay["ID"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">CTC</td>
+        <td id="detail">{{ pay["CTC"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">House Rent Allowance</td>
+        <td id="detail">{{ pay["House_rent_allowance"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Travel Allowance</td>
+        <td id="detail">{{ pay["Travel_allowance"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Taxable Income</td>
+        <td id="detail">{{ pay["Taxable_income"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">Tax rate</td>
+        <td id="detail">{{ pay["Tax_rate"] }}</td>
+    </tr>
+    <tr>
+        <td id="detail">In Hand</td>
+        <td id="detail">{{ pay["In_hand"] }}</td>
+    </tr>
+</table>
+
+
+
+{% endblock %}

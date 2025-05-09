@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>Welcome Employee!</h1>
+    <article id="display">
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'down.png') }}" alt = "Delete" />
+                <a href = "{{url_for('deldetails')}}">Delete all data</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'up.png') }}" alt = "Update" />
+                <a href = "{{url_for('individualdetails')}}">Update your data</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'up.png') }}" alt = "Update" />
+                <a href = "{{url_for('individualbank')}}">Update your bank details</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'eye.png') }}" alt = "eye" />
+                <a href = "{{url_for('your_details')}}">See your details</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'eye.png') }}" alt = "eye" />
+                <a href = "{{url_for('yourpay')}}">See your salary details</a>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <img id = "displayimage" src="{{ url_for('static', filename = 'eye.png') }}" alt = "eye" />
+                <a href = "{{url_for('yourbank')}}">See your bank details</a>
+            </p>
+        </section>
+        
+        
+    </article>
+    
+
+
+{% endblock %}
