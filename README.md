@@ -2,11 +2,13 @@ This is an Employee Management System which manages employee and admin data. An 
 Employee can update certain personal details, while admin can create and update all employee(s) details as well as personal details.
 
 Tech Stack:
-1.	Back-end: 
+1.	Back-end:
+   
     •	Python, Flask for running the program, features and connecting to Database.
+
     •	SQL for managing and interacting with database.
-2.	Database: SQLlite
-3.	Front-end: HTML, CSS
+3.	Database: SQLlite
+4.	Front-end: HTML, CSS
 
 Main features and implementations:
 1.	Login/Logout feature implemented using Flask Sessions.
