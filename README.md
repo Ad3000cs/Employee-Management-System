@@ -18,6 +18,7 @@ Main features and implementations:
 5.	Website design from scratch.
 
 How to Download:
+
 Download the folder “Employee Management System” on your desktop. Make sure you have VS Code (development done on VS Code), 
 Python3, Flask module, HTML5, SQLite3 and CSS3 installed. After downloading the project, you can run project via terminal using the following command with app.py opened: 
 
